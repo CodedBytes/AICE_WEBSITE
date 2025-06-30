@@ -1,0 +1,113 @@
+/* Import da font usada. */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+header.header-404 > span {
+    font-family: Inconsolata;
+    font-size: 20px;
+    padding: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+section.main-404{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14%;
+    height: calc(100vh - 50px);
+}
+
+section.main-404 > .img-404{
+    background-image: url("/imgs/Scarecrow.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 400px;
+}
+
+/* Certifica de manter em coluna não imporata o que aconteça*/
+section.main-404 .information-404{
+    flex-direction: column;
+    width: 470px;    
+}
+
+
+section.main-404 .information-404 > h1{
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 50px;
+    width: 460px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+section.main-404 .information-404 > p{
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 21px;
+    margin: 0px 0px 17px 0px;
+    width: 340px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+section.main-404 .information-404 > button{
+    width: 216px;
+    color: aliceblue;
+    font-family: Space Mono;
+    font-size: 16px;
+    height: 68px;
+    cursor: pointer;
+    border: 2px solid rgb(83, 83, 83);
+    background-color: rgb(70, 70, 70);
+    transition: 0.1s ease-in;
+}
+section.main-404 .information-404 > button:hover{
+    background-color: rgb(41, 41, 41);
+    transition: 0.1s ease-out;
+}
+section.main-404 .information-404 > button:active{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Mobile - Normal*/
+@media screen and (max-width: 765px) {
+    section.main-404 {
+        align-items: flex-start;
+    }
+    
+    section.main-404 .information-404 > h1{
+        font-size: 32px;
+        width: 300px;
+        margin-bottom: 14px;
+    }
+    
+    section.main-404 .information-404 > p{
+        font-size: 16px;
+        margin: 0px 0px 17px 0px;
+        margin-left: 5px;
+        width: 290px;
+    }
+    
+    section.main-404 > .img-404{
+        background-image: url("/imgs/Scarecrow.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 0;
+        height: 300px;
+        margin: 10px 0px;
+        right: 0;
+        margin: auto;
+    }
+
+    section.main-404 .information-404{
+        position: relative;
+        left: 0;
+        right: 0;  
+    }
+}

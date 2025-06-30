@@ -1,0 +1,235 @@
+section.main-banner-section {
+    height: var(--Main-banner-height);
+    background-color: var(--Main-banner-background-color); 
+    color: var(--Main-Banner-text-color);
+}
+
+div.wave-division-top {
+    background-image: url("/imgs/svg - upright.png");
+    width: 100%;
+    height: var(--Main-banner-wave-division-height);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+div.wave-division-top-tiny {
+    background-image: url("/imgs/svg - upright.png");
+    width: 100%;
+    height: var(--Main-banner-wave-division-height);
+    background-size: contain;
+    background-size: 400px 120px;
+    background-repeat: repeat-x;
+    margin-bottom: -80px;
+}
+div.wave-division-bottom-tiny {
+    background-image: url("/imgs/svg.png");
+    width: 100%;
+    height: var(--Main-banner-wave-division-height);
+    background-size: contain;
+    background-size: 400px 130px;
+    background-repeat: repeat-x;
+}
+div.wave-division-bottom {
+    background-image: url("/imgs/svg.png");
+    width: 100%;
+    height: var(--Main-banner-wave-division-height);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+section.aice-products-carrousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px 225px 0px;
+}
+
+section.aice-products-carrousel > .products-title {
+    margin: 0;
+    font: normal normal bold 66px / 66px 'Baloo2';
+    color: var(--Carrossel_produtos_aice_titulo);
+}
+
+section.aice-products-carrousel > .aice-products-division{
+    padding: 30px 0px;
+    width: 80%;
+}
+
+section.aice-products-carrousel > .aice-products-division .itemContained {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 7px 15px 1px;
+    border-radius: 2px;
+    height: 560.5px;
+    width: 352px;
+    padding: 15px;
+    margin: 15px 22px;
+}
+
+section.aice-products-carrousel > .aice-products-division .itemContained > img{
+    width: 295px;
+    height: 357.5px;
+}
+
+section.aice-products-carrousel > .aice-products-division .itemContained > .prod-title{
+    font: normal normal bold 31px/26px 'Baloo2';
+}
+
+section.aice-products-carrousel > .aice-products-division .itemContained > .prod-desc{
+    font: normal normal normal 16px/16px 'Baloo2Normal';
+}
+
+section.aice-products-carrousel > .reseller-btn {
+    border: 5px solid #4a159e;
+    font: normal normal bold 24px/20px 'Baloo2';
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(70vw);
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+section.aice-products-carrousel > .reseller-btn:hover {
+    border: 5px solid #4a159e;
+    background-color: #4a159e;
+    color: white;
+}
+
+section.about-us{
+    display: flex;
+    flex-direction: column;
+    background-color: #4a159e;
+    align-items: center;
+    z-index: 99;
+}
+
+section.about-us > h1{
+    color: #ffffff;
+    margin-top: 0;
+    font: normal normal bold 66px / 66px 'Baloo2';
+}
+
+section.about-us > span{
+    width: 50%;
+    color: #ffffff;
+    margin: 10px 0px;
+}
+
+section.partnership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: -70px 0px 100px 0px;
+}
+
+section.partnership > .partners-division{
+    width: 70%;
+    padding: 0px 0px 0px 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.partnership > .partners-division .logo-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+section.partnership > h1.partnership-title {
+    font: normal normal bold 66px / 66px 'Baloo2';
+    color: #4a159e;
+    margin-bottom: 80px;
+}
+
+section.footer-aice {
+    background-color: #4a159e;
+    height: 300px;
+}
+
+@media screen and (max-width: 765px) {
+    section.main-banner-section {
+        height: var(--Main-banner-mobile-height);
+        background-color: var(--Main-banner-background-color); 
+        color: var(--Main-Banner-text-color);
+    }
+
+    section.aice-products-carrousel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -20px 0px 180px 0px;
+    }
+
+    section.aice-products-carrousel > .products-title {
+        margin: 0;
+        text-align: center;
+        font: normal normal bold 45px/45px 'Baloo2';
+        color: var(--Carrossel_produtos_aice_titulo);
+    }
+
+    section.aice-products-carrousel > .reseller-btn {
+        color: white;
+        background-color: #4a159e;
+        font-size: 21px;
+    }
+
+    section.aice-products-carrousel > .aice-products-division {
+        width: 90%;
+    }
+
+    section.aice-products-carrousel > .aice-products-division .itemContained {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.03) 0px 7px 15px 1px;
+        border-radius: 2px;
+        width: 237px;
+        height: 500px;
+        padding: 15px;
+        margin: 15px 5px;
+    }
+
+    section.aice-products-carrousel > .aice-products-division .itemContained > img{
+        width: 200px;
+        height: 320px;
+    }
+
+    section.about-us{
+        display: flex;
+        flex-direction: column;
+        background-color: #4a159e;
+        align-items: center;
+        z-index: 99;
+    }
+
+    section.about-us > h1{
+        color: #ffffff;
+        margin-top: 0;
+        font: normal normal bold 32px / 66px 'Baloo2';
+    }
+
+    section.about-us > span{
+        width: 80%;
+        color: #ffffff;
+        margin: 10px 0px;
+    }
+
+
+    section.partnership > .partners-division{
+        width: 100%;
+        padding: 0px 0px 0px 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section.partnership > h1.partnership-title {
+        font: normal normal bold 50px / 50px 'Baloo2';
+    }
+
+}

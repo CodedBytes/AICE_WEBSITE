@@ -1,0 +1,41 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Navbar configs */
+  --Navbar-height: 70px;
+  --Navbar-background-color: #4a159e;
+  --Navbar-text-color: white;
+  --Navbar-text-font-size: 22px;
+  --Navbar-link-color: white;
+  --Navbar-link-font-size: 14px;
+
+  /* Main Banner Section */
+  --Main-banner-height: 790px;
+  --Main-banner-mobile-height: 550px;
+  --Main-banner-background-color: #4a159e;
+  --Main-Banner-text-color: white;
+  --Main-banner-wave-division-height: 200px;
+  --Carrossel_produtos_aice_titulo: #4a159e;
+}
+
+@font-face {
+  font-family: Baloo2;
+  src: url("/fonts/Baloo2-SemiBold.ttf");
+}
+@font-face {
+  font-family: Baloo2Normal;
+  src: url("/fonts/Baloo2-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
